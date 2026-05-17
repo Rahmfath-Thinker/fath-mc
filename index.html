@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fath MC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HERO SECTION: Skin Otomatis Berubah sesuai Game -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <!-- Ganti 'UsernameKamu' dengan Gamertag Xbox/Minecraft kamu -->
+            <img src="https://mc-heads.net/body/Thinker9910/right" alt="Minecraft Skin" class="player-skin">
+            <h1 class="gamertag">Thinker9910</h1>
+            <p class="status"><span class="dot-online"></span> Live Tracker</p>
+        </div>
+        <div class="scroll-down">Scroll untuk melihat Achievement ↓</div>
+    </header>
+
+    <main class="container">
+
+        <!-- SECTION 1: STATS (Otomatis Update) -->
+        <section class="card-section">
+            <h2>Statistik Real-Time</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h3>Total Gamerscore</h3>
+                    <p class="stat-value" id="xbox-gamerscore">Loading...</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Status Akun</h3>
+                    <p class="stat-value" id="xbox-presence" style="color: #55ff55;">Loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: ACHIEVEMENTS (Otomatis Muncul Berdasarkan Xbox) -->
+        <section class="card-section">
+            <h2>🏆 Xbox Achievements Terkini</h2>
+            <!-- Tempat menampung list achievement dari Xbox -->
+            <div class="achievement-list" id="achievement-container">
+                <p style="text-align: center; color: #888;">Menghubungkan ke Xbox Live...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JAVASCRIPT UNTUK MENARIK DATA REAL-TIME -->
+    <script src="script.js"></script>
+</body>
+</html>
